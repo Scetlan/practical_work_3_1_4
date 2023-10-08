@@ -1,0 +1,38 @@
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 1120px;
+        padding: 0 30px;
+    }
+
+    .mobil,
+    .main__title {
+        display: none;
+    }
+
+    .menu__desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-service__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .list-service__item:nth-child(1) {
+        padding-right: 32px;
+    }
+
+    .link {
+        padding-right: 8px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content__article {
+        padding-right: 36px;
+    }
+}
