@@ -5,14 +5,31 @@
     url("../font/TTLakes-Regular.woff");
 }
 
+@font-face {
+    font-weight: 400;
+    font-family: "TT Lakes-Bold";
+    src: local("TT Lakes Bold"),
+    url("../font/TTLakes-Bold.woff");
+}
+
 body {
     background-color: #F8F8F8;
     font-family: "TT Lakes", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     color: #1B1C21;
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -30,9 +47,27 @@ a {
     margin-bottom: 24px;
 }
 
+.menu__title {
+    margin: 0;
+}
+
+.title {
+    font-family: "TT Lakes-Bold";
+    font-weight: 700;
+}
+
+.menu {
+    padding: 18px 0;
+    background-color: #FFF;
+}
+
 .menu__mobil {
     display: flex;
     justify-content: space-between;
+}
+
+.menu__icon:nth-child(1) {
+    margin-right: 16px;
 }
 
 .mobil__left,
@@ -64,32 +99,32 @@ a {
     margin-right: 16px;
 }
 
-
+.mobil__contact {
+    display: none;
+}
 
 .menu__desktop {
     display: none;
 }
 
-.menu__list,
 .main__list {
     display: flex;
     list-style-type: none;
-    flex-wrap: wrap;
 
     padding: 0;
     margin: 0;
-}
-
-.main__list {
-    overflow: scroll;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 .list__item {
-    padding: 8px 22px;
     border: 2px solid transparent;
-    color: #7E7E82;
+    white-space: nowrap;
+    padding: 8px 10px;
+}
 
+.list__item a {
+    color: #7E7E82;
 }
 
 .list__item:hover {
@@ -105,24 +140,32 @@ a {
 }
 
 .content__desc {
+    max-height: 200px;
+    text-overflow: clip;
+}
+
+.content__text{
     margin-top: 0;
     line-height: 20px;
 }
 
 .content__button {
     display: flex;
-    cursor: pointer;
     align-items: center;
     padding: 0;
     margin-bottom: 15px;
     line-height: 24px;
-
-    background-color: transparent;
-    border-color: transparent;
 }
 
 .pic-svg {
     margin-right: 8px;
+}
+
+.content__text {
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content__image {
