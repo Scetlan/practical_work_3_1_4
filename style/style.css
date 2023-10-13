@@ -2,14 +2,14 @@
     font-weight: 400;
     font-family: "TT Lakes";
     src: local("TT Lakes Regular"),
-    url("../font/TTLakes-Regular.woff");
+        url("../font/TTLakes-Regular.woff");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "TT Lakes-Bold";
     src: local("TT Lakes Bold"),
-    url("../font/TTLakes-Bold.woff");
+        url("../font/TTLakes-Bold.woff");
 }
 
 body {
@@ -17,6 +17,14 @@ body {
     font-family: "TT Lakes", sans-serif;
     padding: 0;
     margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    color: #1B1C21;
 }
 
 a {
@@ -30,14 +38,6 @@ button {
     border-color: transparent;
     padding: 0;
     margin: 0;
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 0 16px;
-
-    color: #1B1C21;
 }
 
 .menu,
@@ -81,13 +81,13 @@ button {
     position: relative;
 }
 
-.mobil__left:after{
-    content:"";
-    position:absolute;
-    right:0;
+.mobil__left:after {
+    content: "";
+    position: absolute;
+    right: 0;
     width: 2px;
     height: 32px;
-    background:#EAEAEA;  
+    background: #EAEAEA;
 }
 
 .mobil__burger-menu,
@@ -117,6 +117,10 @@ button {
     overflow: auto;
 }
 
+.main__list::-webkit-scrollbar {
+    width: 0;
+}
+
 .list__item {
     border: 2px solid transparent;
     white-space: nowrap;
@@ -144,7 +148,7 @@ button {
     text-overflow: clip;
 }
 
-.content__text{
+.content__text {
     margin-top: 0;
     line-height: 20px;
 }
